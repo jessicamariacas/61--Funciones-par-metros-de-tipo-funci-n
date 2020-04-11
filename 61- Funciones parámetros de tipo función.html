@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function calcular(x, y, fu) {
+            var resu = fu(x, y);
+            return resu;
+        }
+
+        var s1 = calcular(7, 75, function (v1, v2) {
+            return v1 + v2;
+        });
+
+        document.write(s1 + '<br>');
+
+        var s2 = calcular(7, 75, function (v1, v2) {
+            return v1 - v2;
+        });
+
+        document.write(s2 + '<br>');
+    </script>
+
+</body>
+
+</html>
